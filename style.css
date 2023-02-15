@@ -1,0 +1,10 @@
+/*
+Theme Name: Blue Heron
+Theme URI: https://bhg.house/
+Author: Jason Sager
+Description: Description
+Version: 1.0.0
+Text Domain: blue-heron
+*/
+
+body{background-image:url(./img/tapestry.png)}.navbar{height:125px}.navbar-brand img{margin-top:-35px}#carousel{margin:-20px}.footer{margin-top:-110px}#footer-contact{float:left;text-align:left}#footer-nav{float:right;text-align:right}
