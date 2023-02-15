@@ -48,20 +48,21 @@
 
 
 	function theme_scripts(){
-		wp_register_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', $dependencies);
-		wp_register_script('functions-js', get_template_directory_uri() . '/js/functions.js' );
+		wp_register_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', $dependencies);
+		wp_register_script('material-kit-js', get_template_directory_uri() . '/js/material-kit.min.js' );
 
-		wp_register_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.css' );
+		wp_register_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css' );
+        wp_register_style('material-kit-css', get_template_directory_uri() . '/css/material-kit.css' );
 		wp_register_style('playfair-css', 'https://fonts.googleapis.com/css?family=Playfair+Display:700,900' );
 		wp_register_style('icons-css', 'https://fonts.googleapis.com/icon?family=Material+Icons' );
 
 		wp_enqueue_style('style-css', get_stylesheet_uri(), array(), '1.0');
 
-		wp_enqueue_script('jquery');
 		wp_enqueue_script('bootstrap-js');
-		wp_enqueue_script('functions-js');
+		wp_enqueue_script('material-kit-js');
 
 		wp_enqueue_style('bootstrap-css');
+        wp_enqueue_style('material-kit-css');
 		wp_enqueue_style('playfair-css');
 		wp_enqueue_style('icons-css');
 	}
