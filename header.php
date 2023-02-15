@@ -48,8 +48,8 @@
 				'theme_location'  => 'header-menu',
 				'depth'           => 2,
 				'container'       => 'div',
-				'container_class' => 'collapse navbar-collapse',
-				'menu_class'      => 'navbar-nav ml-auto',
+				'container_class' => 'collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0',
+				'menu_class'      => 'navbar-nav navbar-nav-hover ms-auto',
 				'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
 				'walker'          => new WP_Bootstrap_Navwalker()
 			) ); ?>
