@@ -7,6 +7,7 @@ Version: 0.6.0
 Text Domain: blue-heron
 */
 
+<<<<<<< HEAD
 body{background-image:url(./img/tapestry.png)}.navbar{height:125px}.navbar-brand img{margin-top:-35px}#carousel{margin:-20px}.footer{margin-top:-110px}#footer-contact{float:left;text-align:left}#footer-nav{float:right;text-align:right}
 
 .bhgh-layout {
@@ -68,3 +69,44 @@ body{background-image:url(./img/tapestry.png)}.navbar{height:125px}.navbar-brand
       margin-bottom: 80px; }
   .bhgh-layout .features {
     padding-top: 30px; }
+=======
+body{
+    min-height:200vh;
+    background-image:url(./img/tapestry.png)
+}
+
+.navbar{
+    height:125px
+}
+
+.navbar-brand img{
+    margin-top:-35px
+}
+
+.navbar-default{
+    transition:500ms ease;
+    background:transparent
+}
+
+.navbar-default.scrolled{
+    background:##fff !important
+}
+
+#carousel{
+    margin:-20px
+}
+
+.footer{
+    margin-top:-110px
+}
+
+#footer-contact{
+    float:left;
+    text-align:left
+}
+
+#footer-nav{
+    float:right;
+    text-align:right
+}
+>>>>>>> parent of bff3bc4 (Revert "Fixed navbar transparency")
