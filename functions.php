@@ -48,21 +48,21 @@
 
 
 	function theme_scripts(){
-		wp_register_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', $dependencies);
-		wp_register_script('material-kit-js', get_template_directory_uri() . '/js/material-kit.min.js' );
-
-		wp_register_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css' );
         wp_register_style('material-kit-css', get_template_directory_uri() . '/css/material-kit.min.css' );
 		wp_register_style('fonts-css', 'https://fonts.googleapis.com/css?family=Courgette:300,400,500,700|Roboto+Slab:400,700|Material+Icons' );
 
-		wp_enqueue_style('style-css', get_stylesheet_uri(), array(), '1.0');
-
-		wp_enqueue_script('bootstrap-js');
-		wp_enqueue_script('material-kit-js');
-
-		wp_enqueue_style('bootstrap-css');
         wp_enqueue_style('material-kit-css');
 		wp_enqueue_style('fonts-css');
+
+        wp_enqueue_style('style-css', get_stylesheet_uri(), array(), '1.0');
+
+		wp_register_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js');
+        wp_register_script('popper-js', get_template_directory_uri() . '/js/popper.min.js');
+		wp_register_script('material-kit-js', get_template_directory_uri() . '/js/material-kit-pro.min.js' );
+
+		wp_enqueue_script('bootstrap-js');
+        wp_enqueue_script('popper-js');
+		wp_enqueue_script('material-kit-js');
 	}
 	
 	add_action('after_setup_theme', 'theme_setup');
