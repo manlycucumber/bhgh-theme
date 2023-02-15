@@ -12,6 +12,11 @@
   </title>
 
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <style>
+	body {
+		background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/bg.png);
+	}
+  </style>
 </head>
 
 <body class="bg-gray-200">
