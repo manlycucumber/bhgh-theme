@@ -25,13 +25,5 @@
 	</div>
 </footer>
 
-<script src="https://bhg.house/assets/js/jquery.min.js" type="text/javascript"></script>
-<script src="https://bhg.house/assets/js/serialize.js" type="text/javascript"></script>
-<script src="https://bhg.house/assets/js/popper.min.js" type="text/javascript"></script>
-<script src="https://bhg.house/assets/js/bootstrap-material-design.min.js" type="text/javascript"></script>
-<script src="https://bhg.house/assets/js/moment.min.js"></script>
-<script src="https://bhg.house/assets/js/bootstrap-tagsinput.js"></script>
-<script src="https://bhg.house/assets/js/jasny-bootstrap.min.js" type="text/javascript"></script>
-<script src="https://bhg.house/assets/js/material-kit.js?v=2.1.1" type="text/javascript"></script>
 </body>
 </html>
