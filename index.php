@@ -16,60 +16,28 @@
 
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<picture>
-    							<source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/img/slide7.webp">
-    							<source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/img/slide7.jpg">
-    							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide7.jpg" alt="First slide">
-							</picture>
+							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide7.jpg" alt="First slide">
 						</div>
 						<div class="carousel-item">
-							<picture>
-    							<source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/img/empyrean3.webp">
-    							<source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/img/empyrean3.jpg">
-    							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/empyrean3.jpg" alt="Second slide">
-							</picture>
+							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/empyrean3.jpg" alt="Second slide">
 						</div>
 						<div class="carousel-item">
-							<picture>
-    							<source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/img/slide2.webp">
-    							<source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/img/slide2.jpg">
-    							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide2.jpg" alt="Third slide">
-							</picture>
+							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide2.jpg" alt="Third slide">
 						</div>
 						<div class="carousel-item">
-							<picture>
-    							<source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/img/slide3.webp">
-    							<source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/img/slide3.jpg">
-    							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide3.jpg" alt="Fourth slide">
-							</picture>
+							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide3.jpg" alt="Fourth slide">
 						</div>
 						<div class="carousel-item">
-							<picture>
-    							<source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/img/slide4.webp">
-    							<source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/img/slide4.jpg">
-    							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide4.jpg" alt="Fifth slide">
-							</picture>
+							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide4.jpg" alt="Fifth slide">
 						</div>
 						<div class="carousel-item">
-							<picture>
-    							<source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/img/slide5.webp">
-    							<source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/img/slide5.jpg">
-    							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide5.jpg" alt="Sixth slide">
-							</picture>
+							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide5.jpg" alt="Sixth slide">
 						</div>
 						<div class="carousel-item">
-							<picture>
-    							<source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/img/slide6.webp">
-    							<source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/img/slide6.jpg">
-    							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide6.jpg" alt="Seventh slide">
-							</picture>
+							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide6.jpg" alt="Seventh slide">
 						</div>
 						<div class="carousel-item">
-							<picture>
-    							<source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/img/slide9.webp">
-    							<source type="image/jpeg" srcset="<?php echo get_template_directory_uri(); ?>/img/slide9.jpg">
-    							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide9.jpg" alt="Eighth slide">
-							</picture>
+							<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slide9.jpg" alt="Eighth slide">
 						</div>
 					</div>
 					
