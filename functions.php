@@ -52,9 +52,8 @@
 		wp_register_script('material-kit-js', get_template_directory_uri() . '/js/material-kit.min.js' );
 
 		wp_register_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css' );
-        wp_register_style('material-kit-css', get_template_directory_uri() . '/css/material-kit.css' );
-		wp_register_style('playfair-css', 'https://fonts.googleapis.com/css?family=Playfair+Display:700,900' );
-		wp_register_style('icons-css', 'https://fonts.googleapis.com/icon?family=Material+Icons' );
+        wp_register_style('material-kit-css', get_template_directory_uri() . '/css/material-kit.min.css' );
+		wp_register_style('fonts-css', 'https://fonts.googleapis.com/css?family=Courgette:300,400,500,700|Roboto+Slab:400,700|Material+Icons' );
 
 		wp_enqueue_style('style-css', get_stylesheet_uri(), array(), '1.0');
 
@@ -63,8 +62,7 @@
 
 		wp_enqueue_style('bootstrap-css');
         wp_enqueue_style('material-kit-css');
-		wp_enqueue_style('playfair-css');
-		wp_enqueue_style('icons-css');
+		wp_enqueue_style('fonts-css');
 	}
 	
 	add_action('after_setup_theme', 'theme_setup');

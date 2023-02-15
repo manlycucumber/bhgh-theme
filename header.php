@@ -1,11 +1,10 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 	<head>
+		<title><?php echo get_bloginfo('name') ?></title>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<?php wp_head(); ?>
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Courgette:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-		<link href="<?php echo get_template_directory_uri(); ?>/css/material-kit.css" rel="stylesheet" />
 	</head>
 
 
