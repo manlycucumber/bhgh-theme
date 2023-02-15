@@ -8,7 +8,7 @@
 	</head>
 
 
-<body class="product-page sidebar-collapse">
+<body class="bhgh-layout sidebar-collapse">
 	<div id="bgimg" class="page-header header-filter" data-parallax="false" filter-color="warning"" style="background-image: url('<?php background_image(); ?>');"></div>
 	<nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
 	<div class="container">

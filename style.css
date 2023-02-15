@@ -8,3 +8,63 @@ Text Domain: blue-heron
 */
 
 body{background-image:url(./img/tapestry.png)}.navbar{height:125px}.navbar-brand img{margin-top:-35px}#carousel{margin:-20px}.footer{margin-top:-110px}#footer-contact{float:left;text-align:left}#footer-nav{float:right;text-align:right}
+
+.bhgh-layout {
+  background-color: #eee; }
+  .bhgh-layout .page-header {
+    min-height: 60vh;
+    height: auto;
+    background-position: top center; }
+  .bhgh-layout .main-raised {
+    margin: -40vh 0px 0px;
+    padding: 40px; }
+  .bhgh-layout .title-row {
+    margin-top: -8vh; }
+  .bhgh-layout .tab-content {
+    margin: 30px 0px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    text-align: center; }
+    .bhgh-layout .tab-content img {
+      border-radius: 3px;
+      max-width: 300px;
+      height: auto; }
+  .bhgh-layout .main-price {
+    margin: 10px 0 25px; }
+  .bhgh-layout .pick-size {
+    margin-top: 50px; }
+    .bhgh-layout .pick-size .form-group {
+      margin-top: 5px; }
+  .bhgh-layout h2.title {
+    margin-bottom: 0px; }
+  .bhgh-layout .flexi-nav {
+    margin: 20px 0 30px;
+    text-align: center; }
+    .bhgh-layout .flexi-nav > li a {
+      width: 80%;
+      max-width: 85px;
+      margin: 0 auto;
+      padding: 8px;
+      display: block;
+      border: 1px solid transparent;
+      background: transparent;
+      border-radius: 3px;
+      opacity: .8; }
+      .bhgh-layout .flexi-nav > li a:hover, .bhgh-layout .flexi-nav > li a:focus, .bhgh-layout .flexi-nav > li a:active {
+        opacity: 1;
+        border-color: #DDDDDD; }
+      .bhgh-layout .flexi-nav > li a img {
+        border-radius: 3px;
+        width: 100%;
+        height: auto;
+        text-align: center; }
+    .bhgh-layout .flexi-nav > li a.active {
+      opacity: 1;
+      border-color: #DDDDDD; }
+  .bhgh-layout .related-products {
+    margin-top: 50px; }
+    .bhgh-layout .related-products .title {
+      margin-bottom: 80px; }
+  .bhgh-layout .features {
+    padding-top: 30px; }
