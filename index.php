@@ -43,7 +43,7 @@
 
 						function changeOutDate(){
 							d=new Date(document.getElementById("checkout").value);
-							alert("d");
+							alert(d);
 							dt=d.getDate();
 							mn=d.getMonth();
 							mn++;
