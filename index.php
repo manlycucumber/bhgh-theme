@@ -13,6 +13,19 @@
           <div class="sidebar col-lg-4">
 			<div class="ms-lg-4">
 				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) ?>
+				<script type="text/javascript">
+					document.getElementById("mphb_check_in_date-mphb-search-form-63ee49be20659").classList.add('form-control');
+					document.getElementById("mphb_check_in_date-mphb-search-form-63ee49be20659").classList.toggle('form-control');
+
+					document.getElementById("mphb_check_out_date-mphb-search-form-63ee49be20659").classList.add('form-control');
+					document.getElementById("mphb_check_out_date-mphb-search-form-63ee49be20659").classList.toggle('form-control');
+
+					document.getElementById("mphb_adults-mphb-search-form-63ee46e84400b").classList.add('form-control');
+					document.getElementById("mphb_adults-mphb-search-form-63ee46e84400b").classList.toggle('form-control');
+
+					document.getElementById("mphb_children-mphb-search-form-63ee49be20659").classList.add('form-control');
+					document.getElementById("mphb_children-mphb-search-form-63ee49be20659").classList.toggle('form-control');
+				</script>
 			</div>
           </div>
         </div>
