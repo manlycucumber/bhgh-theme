@@ -11,7 +11,7 @@
 			</div>
           </div>
           <div class="sidebar col-lg-4">
-			<div class-"ms-lg-4">
+			<div class="ms-lg-4">
 				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) ?>
 			</div>
           </div>
