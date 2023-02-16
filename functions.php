@@ -65,10 +65,21 @@
 		wp_enqueue_script('material-kit-js');
 	}
 	
+	function theme_widgets() {
+        register_sidebar(array(
+            'name' => 'Sidebar',
+            'before_widget' => '',
+            'after_widget' => '',
+            'before_title' => '',
+            'after_title' => '',
+        ));
+    }
+
 	add_action('after_setup_theme', 'theme_setup');
     add_action('after_setup_theme', 'theme_logo' );
     add_action('after_setup_theme', 'theme_background' );
     add_action('after_setup_theme', 'register_navwalker');
     add_action('init', 'theme_menu');
 	add_action('wp_enqueue_scripts', 'theme_scripts');
+    add_action('widgets_init', 'theme_widgets');
 ?>
