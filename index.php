@@ -31,6 +31,27 @@
 						</div>
 					</div>
 
+					<script type="text/javascript">
+					function thefunction1(){
+    d=new Date(document.getElementById("checkin").value);
+    dt=d.getDate();
+    mn=d.getMonth();
+    mn++;
+    yy=d.getFullYear();
+    document.getElementById("check_in_date").value=mn+"-"+dt+"-"+yy
+}
+
+function thefunction2(){
+    d=new Date(document.getElementById("checkout").value);
+    dt=d.getDate();
+    mn=d.getMonth();
+    mn++;
+    yy=d.getFullYear();
+    document.getElementById("check_out_date").value=mn+"-"+dt+"-"+yy
+}
+
+					</script>
+
 					<input id="check_in_date" name="mphb_check_in_date" type="text" hidden>
 					<input id="check_out_date" name="mphb_check_out_date" type="text" hidden>
 
