@@ -6,6 +6,7 @@ function checkin(){
     yy=d.getFullYear();
     document.getElementById("check_in_date").value=mn+"-"+dt+"-"+yy
 }
+
 function checkout(){
     d=new Date(document.getElementById("checkout").value);
     dt=d.getDate();
