@@ -16,7 +16,7 @@ body {
 
 @media (min-width: 992px) {
   .sidebar {
-    border-left: 1px solid gray;
+    border-left: 1px solid #3c4858;
   }
 }
 
@@ -37,12 +37,8 @@ body {
 
 /* Override Booking Styles */
 
-.datepick {
+.mphb-datepick {
     border-radius: 0.375rem!important;
-}
-
-.datepick-cmd {
-    padding: 0, 5px, 0, 5px!important;
 }
 
 .mphb-datepick {
@@ -123,78 +119,166 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.mphb-datepick-plaintext {
+.mphb_adults {
+    border-radius: 0.375rem!important;
+}
+
+.mphb_adults {
   display: block;
   width: 100%;
   padding: 0.5rem 0;
-  margin-bottom: 0;
-  line-height: 1.5rem;
-  color: #344767;
-  background-color: transparent;
-  border: solid transparent;
-  border-width: 1px 0;
-}
-
-.mphb-datepick-plaintext.mphb-datepick-sm,
-.mphb-datepick-plaintext.mphb-datepick-lg {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.mphb-datepick-sm {
-  min-height: unset;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
-  border-radius: 0.125rem;
-}
-
-.mphb-datepick-sm::file-selector-button {
-  padding: 0.25rem 0.75rem;
-  margin: -0.25rem -0.75rem;
-  margin-inline-end: 0.75rem;
-}
-
-.mphb-datepick-lg {
-  min-height: unset;
-  padding: 0.75rem 0.75rem;
   font-size: 0.875rem;
-  border-radius: 0.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #495057;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid #d2d6da;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: 0.2s ease;
 }
 
-.mphb-datepick-lg::file-selector-button {
-  padding: 0.75rem 0.75rem;
-  margin: -0.75rem -0.75rem;
-  margin-inline-end: 0.75rem;
+@media (prefers-reduced-motion: reduce) {
+  .mphb_adults {
+    transition: none;
+  }
 }
 
-textarea.mphb-datepick {
-  min-height: unset;
+.mphb_adults[type="file"] {
+  overflow: hidden;
 }
 
-textarea.mphb-datepick-sm {
-  min-height: unset;
-}
-
-textarea.mphb-datepick-lg {
-  min-height: unset;
-}
-
-.mphb-datepick-color {
-  width: 3rem;
-  height: auto;
-  padding: 0.5rem;
-}
-
-.mphb-datepick-color:not(:disabled):not([readonly]) {
+.mphb_adults[type="file"]:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
 
-.mphb-datepick-color::-moz-color-swatch {
-  height: 1.5rem;
-  border-radius: 0.375rem;
+.mphb_adults:focus {
+  color: #495057;
+  background-color: transparent;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
 }
 
-.mphb-datepick-color::-webkit-color-swatch {
+.mphb_adults::-webkit-date-and-time-value {
   height: 1.5rem;
+}
+
+.mphb_adults::placeholder {
+  color: #adb5bd;
+  opacity: 1;
+}
+
+.mphb_adults:disabled,
+.mphb_adults[readonly] {
+  background-color: #f0f2f5;
+  opacity: 1;
+}
+
+.mphb_adults::file-selector-button {
+  padding: 0.5rem 0;
+  margin: -0.5rem 0;
+  margin-inline-end: 0;
+  color: #495057;
+  background-color: transparent;
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-radius: 0;
+  transition: all 0.15s ease-in;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mphb_adults::file-selector-button {
+    transition: none;
+  }
+}
+
+.mphb_adults:hover:not(:disabled):not([readonly])::file-selector-button {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.mphb_children {
+    border-radius: 0.375rem!important;
+}
+
+.mphb_children {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #495057;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid #d2d6da;
+  appearance: none;
   border-radius: 0.375rem;
+  transition: 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mphb_children {
+    transition: none;
+  }
+}
+
+.mphb_children[type="file"] {
+  overflow: hidden;
+}
+
+.mphb_children[type="file"]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+
+.mphb_children:focus {
+  color: #495057;
+  background-color: transparent;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+.mphb_children::-webkit-date-and-time-value {
+  height: 1.5rem;
+}
+
+.mphb_children::placeholder {
+  color: #adb5bd;
+  opacity: 1;
+}
+
+.mphb_children:disabled,
+.mphb_children[readonly] {
+  background-color: #f0f2f5;
+  opacity: 1;
+}
+
+.mphb_children::file-selector-button {
+  padding: 0.5rem 0;
+  margin: -0.5rem 0;
+  margin-inline-end: 0;
+  color: #495057;
+  background-color: transparent;
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-radius: 0;
+  transition: all 0.15s ease-in;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mphb_children::file-selector-button {
+    transition: none;
+  }
+}
+
+.mphb_children:hover:not(:disabled):not([readonly])::file-selector-button {
+  background-color: rgba(0, 0, 0, 0.05);
 }
