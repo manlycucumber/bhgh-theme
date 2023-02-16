@@ -12,6 +12,7 @@
           </div>
           <div class="sidebar col-lg-4">
 			<div class="ms-lg-4">
+				<h2>Book Your Stay</h2>
 				<form method="GET" class="mphb_sc_search-form" action="https://blueheron.nowhost.me/search-results/">
 					<div class="row">
 						<div class="col-xl-6 text-center">
@@ -27,6 +28,10 @@
 							</div>
 						</div>
 					</div>
+
+					<input name="mphb_check_in_date" type="text" hidden>
+					<input name="mphb_check_out_date" type="text" hidden>
+
 					<div class="row">
 						<div class="col-xl-6 text-center">
 							<div class="input-group input-group-static mb-4">
@@ -66,12 +71,9 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Search</button>
+							<button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Check Availability</button>
 						</div>
 					</div>
-
-					<input name="mphb_check_in_date" type="text" hidden>
-					<input name="mphb_check_out_date" type="text" hidden>
 
 
 					<script>
