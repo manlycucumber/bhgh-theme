@@ -1,4 +1,4 @@
-function checkin(){
+function thefunction1(){
     d=new Date(document.getElementById("checkin").value);
     dt=d.getDate();
     mn=d.getMonth();
@@ -7,7 +7,7 @@ function checkin(){
     document.getElementById("check_in_date").value=mn+"-"+dt+"-"+yy
 }
 
-function checkout(){
+function thefunction2(){
     d=new Date(document.getElementById("checkout").value);
     dt=d.getDate();
     mn=d.getMonth();

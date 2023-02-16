@@ -20,13 +20,13 @@
 						<div class="col-xl-6 text-center">
 							<div class="input-group input-group-static mb-4">
 								<label>Check-In</label>
-								<input id="checkin" class="form-control" type="date" onblur="checkin();" >
+								<input id="checkin" class="form-control" type="date" onblur="thefunction1();" >
 							</div>
 						</div>
 						<div class="col-xl-6 text-center">
 							<div class="input-group input-group-static mb-4">
 								<label>Check-Out</label>
-								<input id="checkout" class="form-control" type="date" onblur="checkout();" >
+								<input id="checkout" class="form-control" type="date" onblur="thefunction2();" >
 							</div>
 						</div>
 					</div>
