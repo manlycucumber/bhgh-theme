@@ -13,12 +13,20 @@
           <div class="sidebar col-lg-4">
 			<div class="ms-lg-4">
 				<form method="GET" class="mphb_sc_search-form" action="https://blueheron.nowhost.me/search-results/">
-				<label>Date</label>
-      <input type="date" class="form-control">
-      <label>Date</label>
-      <input type="date" class="form-control">
-					<input class="form-control datepicker" placeholder="Check-In Date" type="text" onfocus="focused(this)" onfocusout="defocused(this)" name="mphb_check_in_date">
-					<input class="form-control datepicker" placeholder="Check-Out Date" type="text" onfocus="focused(this)" onfocusout="defocused(this)" name="mphb_check_out_date">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<div class="input-group input-group-outline mb-4">
+								<label class="form-label">Check-In</label>
+								<input class="form-control" type="date" >
+							</div>
+						</div>
+						<div class="col-md-12 text-center">
+							<div class="input-group input-group-outline mb-4">
+								<label class="form-label">Check-In</label>
+								<input class="form-control" type="date" >
+							</div>
+						</div>
+					</div>
 
 					<select id="mphb_adults" class="form-control" name="mphb_adults" placeholder="Number of Adults">
 						<option value="1">1</option>
