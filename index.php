@@ -4,12 +4,16 @@
       <div class="container">
         <div class="row flex-row">
           <div class="col-lg-8">
-            <?php if (have_posts()){ while(have_posts()) : the_post();
-						the_content();
-			endwhile; } ?>
+			<div class="me-2">
+				<?php if (have_posts()){ while(have_posts()) : the_post();
+							the_content();
+				endwhile; } ?>
+			</div>
           </div>
           <div class="sidebar col-lg-4">
+			<div class-"ms-2">
 				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) ?>
+			</div>
           </div>
         </div>
       </div>
