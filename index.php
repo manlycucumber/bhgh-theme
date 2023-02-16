@@ -14,14 +14,14 @@
 			<div class="ms-lg-4">
 				<form method="GET" class="mphb_sc_search-form" action="https://blueheron.nowhost.me/search-results/">
 					<div class="row">
-						<div class="col-lg-12 text-center">
-							<div class="input-group input-group-outline mb-4">
+						<div class="col-lg-6 text-center">
+							<div class="input-group input-group-static mb-4">
 								<label class="form-label">Check-In</label>
 								<input class="form-control" type="date" >
 							</div>
 						</div>
-						<div class="col-md-12 text-center">
-							<div class="input-group input-group-outline mb-4">
+						<div class="col-lg-6 text-center">
+							<div class="input-group input-group-static mb-4">
 								<label class="form-label">Check-In</label>
 								<input class="form-control" type="date" >
 							</div>
