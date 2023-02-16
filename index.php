@@ -13,6 +13,10 @@
           <div class="sidebar col-lg-4">
 			<div class="ms-lg-4">
 				<form method="GET" class="mphb_sc_search-form" action="https://blueheron.nowhost.me/search-results/">
+				<label>Date</label>
+      <input type="date" class="form-control">
+      <label>Date</label>
+      <input type="date" class="form-control">
 					<input class="form-control datepicker" placeholder="Check-In Date" type="text" onfocus="focused(this)" onfocusout="defocused(this)" name="mphb_check_in_date">
 					<input class="form-control datepicker" placeholder="Check-Out Date" type="text" onfocus="focused(this)" onfocusout="defocused(this)" name="mphb_check_out_date">
 
