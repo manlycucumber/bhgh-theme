@@ -32,11 +32,11 @@ body {
 /* Override Booking Styles */
 
 .datepick {
-    border-radius: 0.375rem;
+    border-radius: 0.375rem!important;
 }
 
 .datepick-cmd {
-    padding: 0, 5px, 0, 5px;
+    padding: 0, 5px, 0, 5px!important;
 }
 
 .mphb-datepick {
