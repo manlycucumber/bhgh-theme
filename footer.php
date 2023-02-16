@@ -146,6 +146,7 @@
       </div>
     </div>
   </footer>
+  <script type='text/javascript' src='https://blueheron.nowhost.me/wp-content/themes/bhgh-theme/assets/js/flatpickr.min.js?ver=6.1.1' id='flatpickr-js-js'></script>
   <?php wp_footer(); ?>
 </body>
 </html>
