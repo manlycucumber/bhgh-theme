@@ -14,52 +14,65 @@
 			<div class="ms-lg-4">
 				<form method="GET" class="mphb_sc_search-form" action="https://blueheron.nowhost.me/search-results/">
 					<div class="row">
-						<div class="col-xlg-6 text-center">
+						<div class="col-xl-6 text-center">
 							<div class="input-group input-group-static mb-4">
 								<label>Check-In</label>
 								<input class="form-control" type="date" >
 							</div>
 						</div>
-						<div class="col-xlg-6 text-center">
+						<div class="col-xl-6 text-center">
 							<div class="input-group input-group-static mb-4">
-								<label>Check-In</label>
+								<label>Check-Out</label>
 								<input class="form-control" type="date" >
 							</div>
 						</div>
 					</div>
-
-					<select id="mphb_adults" class="form-control" name="mphb_adults" placeholder="Number of Adults">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-					</select>
-
-					<select id="mphb_kids" class="form-control" name="mphb_children" placeholder="Number of Adults">
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-					</select>
-
+					<div class="row">
+						<div class="col-xl-6 text-center">
+							<div class="input-group input-group-static mb-4">
+								<label># of Adults</label>
+								<select id="mphb_adults" class="form-control" name="mphb_adults" placeholder="Number of Adults">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xl-6 text-center">
+							<div class="input-group input-group-static mb-4">
+								<label># of Children</label>
+								<select id="mphb_kids" class="form-control" name="mphb_children" placeholder="Number of Adults">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+						</div>
+					</div>
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Search</button>
 						</div>
 					</div>
+
+					<input name="mphb_check_in_date" type="text" hidden>
+					<input name="mphb_check_out_date" type="text" hidden>
+
 
 					<script>
 						if (document.getElementById("mphb_adults")) {
