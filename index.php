@@ -1,14 +1,14 @@
 <?php get_header(); ?>
-  <div class="card card-body blur shadow-blur mx-4 mx-md-5 mx-lg-10 mt-n9">
+  <div class="mx-4 mx-md-5 mx-lg-10 mt-n9">
     <div class="section my-4 my-lg-5">
       <div class="container">
         <div class="row flex-row">
-          <div class="col-lg-9">
+          <div class="col-lg-9 card card-body blur shadow-blur ">
             <?php if (have_posts()){ while(have_posts()) : the_post();
 						the_content();
 			endwhile; } ?>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 card card-body blur shadow-blur ">
 
           </div>
         </div>
