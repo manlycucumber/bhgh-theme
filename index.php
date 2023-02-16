@@ -38,7 +38,7 @@
 							mn=d.getMonth();
 							mn++;
 							yy=d.getFullYear();
-							document.getElementById("check_in_date").value=yy+"-"+dt+"-"+mn
+							document.getElementById("check_in_date").value=yy+"-"+mn+"-"+dt
 						}
 
 						function changeOutDate(){
@@ -47,7 +47,7 @@
 							mn=d.getMonth();
 							mn++;
 							yy=d.getFullYear();
-							document.getElementById("check_out_date").value=yy+"-"+dt+"-"+mn
+							document.getElementById("check_out_date").value=yy+"-"+mn+"-"+dt
 						}
 					</script>
 
