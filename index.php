@@ -34,13 +34,13 @@
 					<script type="text/javascript">
 						function changeInDate(){
 							d=document.getElementById("checkin").value;
-							dt = text.split("-");
+							dt = d.split("-");
 							document.getElementById("check_in_date").value=dt[0]+"-"+dt[1]+"-"+dt[2];
 						}
 
 						function changeOutDate(){
 							d=document.getElementById("checkout").value;
-							dt = text.split("-");
+							dt = d.split("-");
 							document.getElementById("check_out_date").value=dt[0]+"-"+dt[1]+"-"+dt[2];
 						}
 					</script>
