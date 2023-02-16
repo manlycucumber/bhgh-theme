@@ -20,19 +20,19 @@
 						<div class="col-xl-6 text-center">
 							<div class="input-group input-group-static mb-4">
 								<label>Check-In</label>
-								<input id="checkin" class="form-control" type="date" onblur="checkin();" >
+								<input id="checkin" class="form-control" type="date" onblur="changeInDate();" >
 							</div>
 						</div>
 						<div class="col-xl-6 text-center">
 							<div class="input-group input-group-static mb-4">
 								<label>Check-Out</label>
-								<input id="checkout" class="form-control" type="date" onblur="checkout();" >
+								<input id="checkout" class="form-control" type="date" onblur="changeOutDate();" >
 							</div>
 						</div>
 					</div>
 
 					<script type="text/javascript">
-						function checkin(){
+						function changeInDate(){
 							d=new Date(document.getElementById("checkin").value);
 							dt=d.getDate();
 							mn=d.getMonth();
@@ -41,7 +41,7 @@
 							document.getElementById("check_in_date").value=yy+"-"+dt+"-"+mn
 						}
 
-						function thefunction2(){
+						function changeOutDate(){
 							d=new Date(document.getElementById("checkout").value);
 							dt=d.getDate();
 							mn=d.getMonth();
