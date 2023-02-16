@@ -3,12 +3,12 @@
     <div class="section my-4 my-lg-5">
       <div class="container">
         <div class="row flex-row">
-          <div class="col-lg-8 pe-4">
+          <div class="col-lg-8">
             <?php if (have_posts()){ while(have_posts()) : the_post();
 						the_content();
 			endwhile; } ?>
           </div>
-          <div class="sidebar col-lg-4 ps-4">
+          <div class="sidebar col-lg-4">
 				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) ?>
           </div>
         </div>
