@@ -4,14 +4,14 @@
       <div class="container">
         <div class="row flex-row">
           <div class="col-lg-8">
-			<div class="me-2">
+			<div class="me-lg-4">
 				<?php if (have_posts()){ while(have_posts()) : the_post();
 							the_content();
 				endwhile; } ?>
 			</div>
           </div>
           <div class="sidebar col-lg-4">
-			<div class-"ms-2">
+			<div class-"ms-lg-4">
 				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) ?>
 			</div>
           </div>
