@@ -15,25 +15,6 @@
 				<h2>Book Your Stay</h2>
 				<br />
 
-				<script>
-					function checkin(){
-						d=new Date(document.getElementById("checkin").value);
-						dt=d.getDate();
-						mn=d.getMonth();
-						mn++;
-						yy=d.getFullYear();
-						document.getElementById("check_in_date").value=mn+"-"+dt+"-"+yy
-					}
-					function checkout(){
-						d=new Date(document.getElementById("checkout").value);
-						dt=d.getDate();
-						mn=d.getMonth();
-						mn++;
-						yy=d.getFullYear();
-						document.getElementById("check_out_date").value=mn+"-"+dt+"-"+yy
-					}
-				</script>
-
 				<form method="GET" class="mphb_sc_search-form" action="https://blueheron.nowhost.me/search-results/">
 					<div class="row">
 						<div class="col-xl-6 text-center">
