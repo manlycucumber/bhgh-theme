@@ -3,12 +3,12 @@
     <div class="section my-4 my-lg-5">
       <div class="container">
         <div class="row flex-row">
-          <div class="col-lg-9">
+          <div class="col-lg-8">
             <?php if (have_posts()){ while(have_posts()) : the_post();
 						the_content();
 			endwhile; } ?>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-4">
 
           </div>
         </div>
