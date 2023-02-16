@@ -13,24 +13,43 @@
           <div class="sidebar col-lg-4">
 			<div class="ms-lg-4">
 				<h2>Book Your Stay</h2>
+				<br />
 				<form method="GET" class="mphb_sc_search-form" action="https://blueheron.nowhost.me/search-results/">
 					<div class="row">
 						<div class="col-xl-6 text-center">
 							<div class="input-group input-group-static mb-4">
 								<label>Check-In</label>
-								<input class="form-control" type="date" >
+								<input id="checkin" class="form-control" type="date" onblur="checkin()" >
 							</div>
 						</div>
 						<div class="col-xl-6 text-center">
 							<div class="input-group input-group-static mb-4">
 								<label>Check-Out</label>
-								<input class="form-control" type="date" >
+								<input id="checkout" class="form-control" type="date" onblur="checkout()" >
 							</div>
 						</div>
 					</div>
 
 					<input name="mphb_check_in_date" type="text" hidden>
 					<input name="mphb_check_out_date" type="text" hidden>
+					<script>
+					function checkin(){
+						d=new Date(document.getElementById("checkin").value);
+						dt=d.getDate();
+						mn=d.getMonth();
+						mn++;
+						yy=d.getFullYear();
+						document.getElementById("mphb_check_in_date").value=mn+"-"+dt+"-"+yy
+					}
+					function checkout(){
+						d=new Date(document.getElementById("checkout").value);
+						dt=d.getDate();
+						mn=d.getMonth();
+						mn++;
+						yy=d.getFullYear();
+						document.getElementById("mphb_check_out_date").value=mn+"-"+dt+"-"+yy
+					}
+					</script>
 
 					<div class="row">
 						<div class="col-xl-6 text-center">
