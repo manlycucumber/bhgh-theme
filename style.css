@@ -14,12 +14,6 @@ body {
     color: #3C4858;
 }
 
-@media (min-width: 150px) {
-  .sidebar {
-    border-left: 0px solid gray;
-  }
-}
-
 @media (min-width: 992px) {
   .sidebar {
     border-left: 1px solid gray;
