@@ -28,3 +28,159 @@ body {
 .card-body {
     font-family: "Courgette", "Helvetica", "Arial", cursive!important;
 }
+
+/* Override Booking Styles */
+
+.mphb-datepick {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #495057;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid #d2d6da;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mphb-datepick {
+    transition: none;
+  }
+}
+
+.mphb-datepick[type="file"] {
+  overflow: hidden;
+}
+
+.mphb-datepick[type="file"]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+
+.mphb-datepick:focus {
+  color: #495057;
+  background-color: transparent;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+.mphb-datepick::-webkit-date-and-time-value {
+  height: 1.5rem;
+}
+
+.mphb-datepick::placeholder {
+  color: #adb5bd;
+  opacity: 1;
+}
+
+.mphb-datepick:disabled,
+.mphb-datepick[readonly] {
+  background-color: #f0f2f5;
+  opacity: 1;
+}
+
+.mphb-datepick::file-selector-button {
+  padding: 0.5rem 0;
+  margin: -0.5rem 0;
+  margin-inline-end: 0;
+  color: #495057;
+  background-color: transparent;
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-radius: 0;
+  transition: all 0.15s ease-in;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mphb-datepick::file-selector-button {
+    transition: none;
+  }
+}
+
+.mphb-datepick:hover:not(:disabled):not([readonly])::file-selector-button {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.mphb-datepick-plaintext {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+  color: #344767;
+  background-color: transparent;
+  border: solid transparent;
+  border-width: 1px 0;
+}
+
+.mphb-datepick-plaintext.mphb-datepick-sm,
+.mphb-datepick-plaintext.mphb-datepick-lg {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.mphb-datepick-sm {
+  min-height: unset;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 0.125rem;
+}
+
+.mphb-datepick-sm::file-selector-button {
+  padding: 0.25rem 0.75rem;
+  margin: -0.25rem -0.75rem;
+  margin-inline-end: 0.75rem;
+}
+
+.mphb-datepick-lg {
+  min-height: unset;
+  padding: 0.75rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+}
+
+.mphb-datepick-lg::file-selector-button {
+  padding: 0.75rem 0.75rem;
+  margin: -0.75rem -0.75rem;
+  margin-inline-end: 0.75rem;
+}
+
+textarea.mphb-datepick {
+  min-height: unset;
+}
+
+textarea.mphb-datepick-sm {
+  min-height: unset;
+}
+
+textarea.mphb-datepick-lg {
+  min-height: unset;
+}
+
+.mphb-datepick-color {
+  width: 3rem;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.mphb-datepick-color:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+
+.mphb-datepick-color::-moz-color-swatch {
+  height: 1.5rem;
+  border-radius: 0.375rem;
+}
+
+.mphb-datepick-color::-webkit-color-swatch {
+  height: 1.5rem;
+  border-radius: 0.375rem;
+}
