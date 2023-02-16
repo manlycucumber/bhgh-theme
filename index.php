@@ -12,20 +12,58 @@
           </div>
           <div class="sidebar col-lg-4">
 			<div class="ms-lg-4">
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) ?>
-				<script type="text/javascript">
-					document.getElementById("mphb_check_in_date-mphb-search-form-63ee49be20659").classList.add('form-control');
-					document.getElementById("mphb_check_in_date-mphb-search-form-63ee49be20659").classList.toggle('form-control');
+				<form method="GET" class="mphb_sc_search-form" action="https://blueheron.nowhost.me/search-results/">
+					<input class="form-control datepicker" placeholder="Check-In Date" type="text" onfocus="focused(this)" onfocusout="defocused(this)" name="mphb_check_in_date">
+					<input class="form-control datepicker" placeholder="Check-Out Date" type="text" onfocus="focused(this)" onfocusout="defocused(this)" name="mphb_check_out_date">
 
-					document.getElementById("mphb_check_out_date-mphb-search-form-63ee49be20659").classList.add('form-control');
-					document.getElementById("mphb_check_out_date-mphb-search-form-63ee49be20659").classList.toggle('form-control');
+					<select id="mphb_adults" class="form-control" name="mphb_adults" placeholder="Number of Adults">
+						<option value="1" selected>1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
 
-					document.getElementById("mphb_adults-mphb-search-form-63ee46e84400b").classList.add('form-control');
-					document.getElementById("mphb_adults-mphb-search-form-63ee46e84400b").classList.toggle('form-control');
+					<select id="mphb_kids" class="form-control" name="mphb_children" placeholder="Number of Adults">
+						<option value="0" selected>0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
 
-					document.getElementById("mphb_children-mphb-search-form-63ee49be20659").classList.add('form-control');
-					document.getElementById("mphb_children-mphb-search-form-63ee49be20659").classList.toggle('form-control');
-				</script>
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Search</button>
+						</div>
+					</div>
+
+					<script>
+						if (document.getElementById("mphb_adults")) {
+							var element = document.getElementById("mphb_adults");
+							const example = new Choices(element, {});
+						}
+
+						if (document.getElementById("mphb_kids")) {
+							var element = document.getElementById("mphb_kids");
+							const example = new Choices(element, {});
+						}
+					</script>
+
+				    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) ?>
+				</form>
+			  </div>
 			</div>
           </div>
         </div>
