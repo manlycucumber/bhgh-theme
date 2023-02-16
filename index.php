@@ -8,7 +8,7 @@
 						the_content();
 			endwhile; } ?>
           </div>
-          <div class="col-lg-4">
+          <div class="sidebar col-lg-4">
 				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) ?>
           </div>
         </div>
