@@ -17,7 +17,7 @@
 					<input class="form-control datepicker" placeholder="Check-Out Date" type="text" onfocus="focused(this)" onfocusout="defocused(this)" name="mphb_check_out_date">
 
 					<select id="mphb_adults" class="form-control" name="mphb_adults" placeholder="Number of Adults">
-						<option value="1" selected>1</option>
+						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
@@ -30,7 +30,7 @@
 					</select>
 
 					<select id="mphb_kids" class="form-control" name="mphb_children" placeholder="Number of Adults">
-						<option value="0" selected>0</option>
+						<option value="0">0</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -52,12 +52,12 @@
 					<script>
 						if (document.getElementById("mphb_adults")) {
 							var element = document.getElementById("mphb_adults");
-							const example = new Choices(element, {});
+							const ADULTS = new Choices(element, {});
 						}
 
 						if (document.getElementById("mphb_kids")) {
 							var element = document.getElementById("mphb_kids");
-							const example = new Choices(element, {});
+							const KIDS = new Choices(element, {});
 						}
 					</script>
 
