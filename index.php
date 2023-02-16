@@ -33,22 +33,15 @@
 
 					<script type="text/javascript">
 						function changeInDate(){
-							d=new Date(document.getElementById("checkin").value);
-							dt=d.getDate();
-							mn=d.getMonth();
-							mn++;
-							yy=d.getFullYear();
-							document.getElementById("check_in_date").value=yy+"-"+mn+"-"+dt
+							d=document.getElementById("checkin").value;
+							dt = text.split("-");
+							document.getElementById("check_in_date").value=dt[0]+"-"+dt[1]+"-"+dt[2];
 						}
 
 						function changeOutDate(){
-							d=new Date(document.getElementById("checkout").value);
-							alert(d);
-							dt=d.getDate();
-							mn=d.getMonth();
-							mn++;
-							yy=d.getFullYear();
-							document.getElementById("check_out_date").value=yy+"-"+mn+"-"+dt
+							d=document.getElementById("checkout").value;
+							dt = text.split("-");
+							document.getElementById("check_out_date").value=dt[0]+"-"+dt[1]+"-"+dt[2];
 						}
 					</script>
 
