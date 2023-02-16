@@ -91,7 +91,6 @@
 						</div>
 					</div>
 
-
 					<script>
 						if (document.getElementById("mphb_adults")) {
 							var element = document.getElementById("mphb_adults");
