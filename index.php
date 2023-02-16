@@ -20,36 +20,35 @@
 						<div class="col-xl-6 text-center">
 							<div class="input-group input-group-static mb-4">
 								<label>Check-In</label>
-								<input id="checkin" class="form-control" type="date" onblur="thefunction1();" >
+								<input id="checkin" class="form-control" type="date" onblur="checkin();" >
 							</div>
 						</div>
 						<div class="col-xl-6 text-center">
 							<div class="input-group input-group-static mb-4">
 								<label>Check-Out</label>
-								<input id="checkout" class="form-control" type="date" onblur="thefunction2();" >
+								<input id="checkout" class="form-control" type="date" onblur="checkout();" >
 							</div>
 						</div>
 					</div>
 
 					<script type="text/javascript">
-					function thefunction1(){
-    d=new Date(document.getElementById("checkin").value);
-    dt=d.getDate();
-    mn=d.getMonth();
-    mn++;
-    yy=d.getFullYear();
-    document.getElementById("check_in_date").value=mn+"-"+dt+"-"+yy
-}
+						function checkin(){
+							d=new Date(document.getElementById("checkin").value);
+							dt=d.getDate();
+							mn=d.getMonth();
+							mn++;
+							yy=d.getFullYear();
+							document.getElementById("check_in_date").value=yy+"-"+dt+"-"+mn
+						}
 
-function thefunction2(){
-    d=new Date(document.getElementById("checkout").value);
-    dt=d.getDate();
-    mn=d.getMonth();
-    mn++;
-    yy=d.getFullYear();
-    document.getElementById("check_out_date").value=mn+"-"+dt+"-"+yy
-}
-
+						function thefunction2(){
+							d=new Date(document.getElementById("checkout").value);
+							dt=d.getDate();
+							mn=d.getMonth();
+							mn++;
+							yy=d.getFullYear();
+							document.getElementById("check_out_date").value=yy+"-"+dt+"-"+mn
+						}
 					</script>
 
 					<input id="check_in_date" name="mphb_check_in_date" type="text" hidden>

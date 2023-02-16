@@ -60,13 +60,11 @@
         wp_register_script('popper-js', get_template_directory_uri() . '/assets/js/popper.min.js');
 		wp_register_script('material-kit-js', get_template_directory_uri() . '/assets/js/material-kit-pro.min.js' );
 		wp_register_script('choices-js', get_template_directory_uri() . '/assets/js/choices.min.js' );
-        wp_register_script('functions-js', get_template_directory_uri() . '/assets/js/functions.js' );
 
 		wp_enqueue_script('bootstrap-js');
         wp_enqueue_script('popper-js');
 		wp_enqueue_script('material-kit-js');
 		wp_enqueue_script('choices-js');
-        wp_enqueue_script('functions-js');
 	}
 	
 	function theme_widgets() {
