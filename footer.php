@@ -4,9 +4,9 @@
         <div class="col-md-3 mb-4 ms-auto">
           <div>
             <a href="<?php echo get_home_url(); ?>">
-				<img src="<?php get_site_icon_url(); ?>" class="mb-3 footer-logo" alt="<?php get_bloginfo('name'); ?>">
+				<img src="<?php echo get_site_icon_url(); ?>" height="32" class="mb-3 footer-logo" alt="<?php echo get_bloginfo('name'); ?>">
             </a>
-            <h6 class="font-weight-bolder mb-4"><?php echo get_bloginfo('name') ?>/h6>
+            <h6 class="font-weight-bolder mb-4"><?php echo get_bloginfo('name') ?></h6>
           </div>
           <div>
             <ul class="d-flex flex-row ms-n3 nav">
