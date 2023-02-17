@@ -75,6 +75,30 @@
             'before_title' => '',
             'after_title' => '',
         ));
+
+        register_sidebar(array(
+            'name' => 'Footer1',
+            'before_widget' => '',
+            'after_widget' => '',
+            'before_title' => '',
+            'after_title' => '',
+        ));
+
+        register_sidebar(array(
+            'name' => 'Footer2',
+            'before_widget' => '',
+            'after_widget' => '',
+            'before_title' => '',
+            'after_title' => '',
+        ));
+
+        register_sidebar(array(
+            'name' => 'Footer3',
+            'before_widget' => '',
+            'after_widget' => '',
+            'before_title' => '',
+            'after_title' => '',
+        ));
     }
 
 	add_action('after_setup_theme', 'theme_setup');

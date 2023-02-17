@@ -4,7 +4,7 @@
         <div class="col-md-3 mb-4 ms-auto">
           <div>
             <a href="<?php echo get_home_url(); ?>">
-				<img src="<?php echo get_site_icon_url(); ?>" height="32" class="mb-3 footer-logo" alt="<?php echo get_bloginfo('name'); ?>">
+				<img src="<?php echo get_site_icon_url(); ?>" height="45" class="mb-3 footer-logo" alt="<?php echo get_bloginfo('name'); ?>">
             </a>
             <h6 class="font-weight-bolder mb-4"><?php echo get_bloginfo('name') ?></h6>
           </div>
@@ -39,102 +39,22 @@
           </div>
         </div>
         <div class="col-md-2 col-sm-6 col-6 mb-4">
-          <div>
-            <h6 class="text-sm">Company</h6>
-            <ul class="flex-column ms-n3 nav">
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/presentation" target="_blank">
-                  About Us
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/templates/free" target="_blank">
-                  Freebies
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/templates/premium" target="_blank">
-                  Premium Tools
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/blog" target="_blank">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </div>
+          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer1') ) ?>
         </div>
         <div class="col-md-2 col-sm-6 col-6 mb-4">
-          <div>
-            <h6 class="text-sm">Resources</h6>
-            <ul class="flex-column ms-n3 nav">
-              <li class="nav-item">
-                <a class="nav-link" href="https://iradesign.io/" target="_blank">
-                  Illustrations
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/bits" target="_blank">
-                  Bits & Snippets
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/affiliates/new" target="_blank">
-                  Affiliate Program
-                </a>
-              </li>
-            </ul>
-          </div>
+          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer2') ) ?>
         </div>
         <div class="col-md-2 col-sm-6 col-6 mb-4">
-          <div>
-            <h6 class="text-sm">Help & Support</h6>
-            <ul class="flex-column ms-n3 nav">
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/contact-us" target="_blank">
-                  Contact Us
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/knowledge-center" target="_blank">
-                  Knowledge Center
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://services.creative-tim.com/?ref=ct-material-kit-pro-footer" target="_blank">
-                  Custom Development
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/sponsorships" target="_blank">
-                  Sponsorships
-                </a>
-              </li>
-            </ul>
-          </div>
+          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer3') ) ?>
         </div>
         <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
-          <div>
-            <h6 class="text-sm">Legal</h6>
-            <ul class="flex-column ms-n3 nav">
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/knowledge-center/terms-of-service/" target="_blank">
-                  Terms & Conditions
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/knowledge-center/privacy-policy/" target="_blank">
-                  Privacy Policy
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.creative-tim.com/license" target="_blank">
-                  Licenses (EULA)
-                </a>
-              </li>
-            </ul>
-          </div>
+          <?php wp_nav_menu( array(
+				'theme_location'  => 'header-menu',
+				'depth'           => 2,
+				'container'       => 'div',
+				'container_class' => 'collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0',
+				'menu_class'      => 'navbar-nav navbar-nav-hover ms-auto'
+		  ) ); ?>
         </div>
         <div class="col-12">
           <div class="text-center">
