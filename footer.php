@@ -49,11 +49,11 @@
         </div>
         <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
           <?php wp_nav_menu( array(
-				'theme_location'  => 'header-menu',
+				'theme_location'  => 'footer-menu',
 				'depth'           => 2,
 				'container'       => 'div',
-				'container_class' => 'collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0',
-				'menu_class'      => 'navbar-nav navbar-nav-hover ms-auto'
+				'container_class' => '',
+				'menu_class'      => ''
 		  ) ); ?>
         </div>
         <div class="col-12">
