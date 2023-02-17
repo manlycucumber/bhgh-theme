@@ -3,10 +3,10 @@
       <div class="row">
         <div class="col-md-3 mb-4 ms-auto">
           <div>
-            <a href="https://www.creative-tim.com/product/material-kit-pro">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/mkimg/logo-ct-dark.png" class="mb-3 footer-logo" alt="main_logo">
+            <a href="<?php echo get_home_url(); ?>">
+				<img src="<?php get_site_icon_url(); ?>" class="mb-3 footer-logo" alt="<?php get_bloginfo('name'); ?>">
             </a>
-            <h6 class="font-weight-bolder mb-4">Material Kit 2 PRO</h6>
+            <h6 class="font-weight-bolder mb-4"><?php echo get_bloginfo('name') ?>/h6>
           </div>
           <div>
             <ul class="d-flex flex-row ms-n3 nav">

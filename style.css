@@ -34,3 +34,7 @@ body {
 .card-body {
     font-family: "Courgette", "Helvetica", "Arial", cursive!important;
 }
+
+.n2-ss-slider-2 {
+  border-radius: 0.375rem !important;
+}

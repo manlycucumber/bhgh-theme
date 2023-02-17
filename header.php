@@ -8,7 +8,7 @@
   <?php wp_head(); ?>
 
   <title>
-    Home - <?php echo get_bloginfo('name') ?><
+    Home - <?php echo get_bloginfo('name') ?>
   </title>
 
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
