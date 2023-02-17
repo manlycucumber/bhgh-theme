@@ -1,10 +1,10 @@
 <footer class="footer card card-body shadow-blur rounded-0 pt-5 mt-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 mb-4 ms-auto">
+        <div class="col-md-3 col-sm-6 col-6 ms-auto">
           <div>
             <a href="<?php echo get_home_url(); ?>">
-				<img src="<?php echo get_site_icon_url(); ?>" height="45" class="mb-3 footer-logo" alt="<?php echo get_bloginfo('name'); ?>">
+				<img src="<?php echo get_site_icon_url(); ?>" height="55" class="mb-3" alt="<?php echo get_bloginfo('name'); ?>">
             </a>
             <h6 class="font-weight-bolder mb-4"><?php echo get_bloginfo('name') ?></h6>
           </div>
@@ -38,16 +38,13 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-2 col-sm-6 col-6 mb-4">
+        <div class="col-md-3 col-sm-6 col-6 mb-4">
           <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer1') ) ?>
         </div>
-        <div class="col-md-2 col-sm-6 col-6 mb-4">
+        <div class="col-md-3 col-sm-6 col-6 mb-4">
           <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer2') ) ?>
         </div>
-        <div class="col-md-2 col-sm-6 col-6 mb-4">
-          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer3') ) ?>
-        </div>
-        <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
+        <div class="col-md-3 col-sm-6 col-6 mb-4 me-auto">
           <?php wp_nav_menu( array(
 				'theme_location'  => 'footer-menu',
 				'depth'           => 2,
