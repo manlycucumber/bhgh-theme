@@ -36,7 +36,8 @@
     function theme_menu() {
 		register_nav_menus(
             array(
-            'header-menu' => __( 'Header Menu' )
+            'header-menu' => __( 'Header Menu' ),
+            'footer-menu' => __( 'Footer Menu' )
             )
         );
 	}
@@ -68,7 +69,15 @@
 	
 	function theme_widgets() {
         register_sidebar(array(
-            'name' => 'Footer',
+            'name' => 'Footer1',
+            'before_widget' => '',
+            'after_widget' => '',
+            'before_title' => '',
+            'after_title' => '',
+        ));
+
+        register_sidebar(array(
+            'name' => 'Footer2',
             'before_widget' => '',
             'after_widget' => '',
             'before_title' => '',
