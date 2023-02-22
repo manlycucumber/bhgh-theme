@@ -44,7 +44,7 @@
         <div class="col-md-3 col-sm-6 col-6 mb-4">
           <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer2') ) ?>
         </div>
-        <div class="col-md-3 col-sm-6 col-6 mb-4 me-auto">
+        <div class="col-md-3 col-sm-6 col-6 mb-4 me-auto footer-nav">
           <?php wp_nav_menu( array(
 				'theme_location'  => 'footer-menu',
 				'depth'           => 2,

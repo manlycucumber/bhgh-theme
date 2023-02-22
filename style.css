@@ -20,6 +20,9 @@ body {
   }
 }
 
+.footer-nav ul{
+  list-style-type: none!important;
+}
 
 /* Override Material Kit Styles */
 
