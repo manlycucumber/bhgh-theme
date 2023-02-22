@@ -44,15 +44,71 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </span>
             </button>
-            <?php wp_nav_menu( array(
-				'theme_location'  => 'header-menu',
-				'depth'           => 2,
-				'container'       => 'div',
-				'container_class' => 'collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0',
-				'menu_class'      => 'navbar-nav navbar-nav-hover ms-auto',
-				'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-				'walker'          => new WP_Bootstrap_Navwalker()
-			) ); ?>
+            <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+              <ul class="navbar-nav navbar-nav-hover ms-auto">
+                <li class="nav-item mx-2">
+                  <a href="<?php echo get_home_url(); ?>" role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                  <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuAccount" data-bs-toggle="dropdown" aria-expanded="false">
+                    Rooms
+                    <img src=" <?php echo get_template_directory_uri(); ?>/assets/img/down-arrow-dark.svg  " alt="down-arrow" class="arrow ms-2 d-lg-block d-none">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-1 d-lg-none d-block ms-auto">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-animation dropdown-md border-radius-xl p-3 mt-0 mt-lg-3" aria-labelledby="dropdownMenuAccount">
+                    <div class="d-none d-lg-flex">
+                      <ul class="list-group w-100">
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a href="<?php echo get_home_url(); ?>/empyrean/" class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1">
+                            <span>Empyrean</span>
+                          </a>
+                        </li>
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a href="<?php echo get_home_url(); ?>/herons-nest/" class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1">
+                            <span>Heron's Nest</span>
+                          </a>
+                        </li>
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a href="<?php echo get_home_url(); ?>/waters-edge/" class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1">
+                            <span>Water's Edge</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="row d-lg-none">
+                      <div class="col-12 d-flex justify-content-center flex-column">
+                        <a href="<?php echo get_home_url(); ?>/empyrean/" class="dropdown-item border-radius-md">
+                          Empyrean
+                        </a>
+                        <a href="<?php echo get_home_url(); ?>/herons-nest/" class="dropdown-item border-radius-md">
+                          Heron's Nest
+                        </a>
+                        <a href="<?php echo get_home_url(); ?>/waters-edge/" class="dropdown-item border-radius-md">
+                          Water's Edge
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item mx-2">
+                  <a href="<?php echo get_home_url(); ?>/reservations/" role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    Reservations
+                  </a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a href="https://villageatwinona.com/" role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    Village at Winona
+                  </a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a href="<?php echo get_home_url(); ?>/contact/" role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
         <!-- End Navbar -->
