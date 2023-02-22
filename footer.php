@@ -1,7 +1,7 @@
 <footer class="footer card card-body shadow-blur rounded-0 pt-5 mt-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-6 ms-auto">
+        <div class="col-6 ms-auto">
           <div>
             <a href="<?php echo get_home_url(); ?>">
 				<img src="<?php echo get_site_icon_url(); ?>" height="55" class="mb-3" alt="<?php echo get_bloginfo('name'); ?>">
@@ -23,7 +23,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-6 mb-4 text-right">
+        <div class="col-6 mb-4 text-right">
           <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) ?>
         </div>
         <div class="col-12">
