@@ -11,7 +11,7 @@
     Home - <?php echo get_bloginfo('name') ?>
   </title>
 
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/22e6c8037f.js" crossorigin="anonymous"></script>
   <style>
 	body {
 		background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/bg.png);
@@ -62,17 +62,17 @@
                       <ul class="list-group w-100">
                         <li class="nav-item list-group-item border-0 p-0">
                           <a href="<?php echo get_home_url(); ?>/empyrean/" class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1">
-                            <span>Empyrean</span>
-                          </a>
-                        </li>
-                        <li class="nav-item list-group-item border-0 p-0">
-                          <a href="<?php echo get_home_url(); ?>/herons-nest/" class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1">
-                            <span>Heron's Nest</span>
+                            <span>The Empyrean Suite</span>
                           </a>
                         </li>
                         <li class="nav-item list-group-item border-0 p-0">
                           <a href="<?php echo get_home_url(); ?>/waters-edge/" class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1">
-                            <span>Water's Edge</span>
+                            <span>The Water's Edge</span>
+                          </a>
+                        </li>
+                        <li class="nav-item list-group-item border-0 p-0">
+                          <a href="<?php echo get_home_url(); ?>/herons-nest/" class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1">
+                            <span>The Heron Nest</span>
                           </a>
                         </li>
                       </ul>
