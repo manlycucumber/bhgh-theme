@@ -71,7 +71,7 @@
                           </a>
                         </li>
                         <li class="nav-item list-group-item border-0 p-0">
-                          <a href="<?php echo get_home_url(); ?>/herons-nest/" class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1">
+                          <a href="<?php echo get_home_url(); ?>/heron-nest/" class="dropdown-item border-radius-md text-dark ps-3 d-flex align-items-center mb-1">
                             <span>The Heron Nest</span>
                           </a>
                         </li>
